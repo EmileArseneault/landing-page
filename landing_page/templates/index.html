@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,19 +15,19 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
     
     <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
+    <script defer src="{% static 'fontawesome/js/all.js' %}"></script>
     
     <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}">   
     
     <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
+    <link rel="stylesheet" href="{% static 'plugins/github-calendar/dist/github-calendar.css' %}">
     <!-- github activity css -->    
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
+    <link rel="stylesheet" href="{% static 'plugins/github-activity/github-activity-0.1.5.min.css' %}">
     
     <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <link id="theme-style" rel="stylesheet" href="{% static 'css/styles.css' %}">
 
     
 </head> 
@@ -35,7 +36,7 @@
     <!-- ******HEADER****** --> 
     <header class="header">
         <div class="container clearfix">                       
-            <img class="profile-image img-fluid float-left" src="assets/images/profile.png" alt="James Lee" />
+		<img class="profile-image img-fluid float-left" src="{% static 'images/profile.png' %}" alt="Emile Arseneault" />
             <div class="profile-content float-left">
                 <h1 class="name">Émile Arseneault</h1>
                 <h2 class="desc">Software Engineer</h2>   
@@ -75,7 +76,7 @@
                                 <p class="summary">The perfect Bootstrap 4 admin template for app developers</p>
                                 <div class="featured-image has-ribbon">
                                     <a href="https://themes.3rdwavemedia.com/bootstrap-templates/product/appify-bootstrap-4-admin-template-for-app-developers/" target="_blank">
-                                    <img class="img-fluid project-image" src="assets/images/projects/project-featured.jpg" alt="project name" />
+					    <img class="img-fluid project-image" src="{% static 'images/projects/project-featured.jpg' %}" alt="project name" />
                                     </a>
                                     <div class="ribbon">
                                         <div class="text">New</div>
@@ -90,7 +91,7 @@
                             <hr class="divider" />
                             <div class="item row">
                                 <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/" target="_blank">
-                                <img class="img-fluid project-image" src="assets/images/projects/project-1.png" alt="project name" />
+					<img class="img-fluid project-image" src="{% static 'images/projects/project-1.png' %}" alt="project name" />
                                 </a>
                                 <div class="desc col-md-8 col-12">
                                     <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/" target="_blank">Instance - Bootstrap 4 Portfolio Theme for Aspiring Full Stack Developers</a></h3>
@@ -101,7 +102,7 @@
                             
                             <div class="item row">
                                 <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/" target="_blank">
-                                <img class="img-fluid project-image" src="assets/images/projects/project-2.png" alt="project name" />
+					<img class="img-fluid project-image" src="{% static 'images/projects/project-2.png' %}" alt="project name" />
                                 </a>
                                 <div class="desc col-md-8 col-12">
                                     <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/" target="_blank">DevStudio - Bootstrap 4 Theme for WebDev Agencies and Freelance Developers</a></h3>
@@ -112,7 +113,7 @@
                             
                              <div class="item row">
                                 <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/startupkit-bootstrap-theme-for-saas-startups/" target="_blank">
-                                <img class="img-fluid project-image" src="assets/images/projects/project-3.png" alt="project name" />
+					<img class="img-fluid project-image" src="{% static 'images/projects/project-3.png' %}" alt="project name" />
                                 </a>
                                 <div class="desc col-md-8 col-12">
                                     <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/startupkit-bootstrap-theme-for-saas-startups/" target="_blank">Startup Kit - Bootstrap 4 Theme for SaaS Startups</a></h3>
@@ -123,7 +124,7 @@
                             
                             <div class="item row">
                                 <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank">
-                                <img class="img-fluid project-image" src="assets/images/projects/project-4.png" alt="project name" />
+					<img class="img-fluid project-image" src="{% static 'images/projects/project-4.png' %}" alt="project name" />
                                 </a>
                                 <div class="desc col-md-8 col-12">
                                     <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank">Nova Pro - Bootstrap 4 Theme for Mobile Startups</a></h3>
@@ -133,7 +134,7 @@
                             </div><!--//item-->                            
                             <div class="item row">
                                 <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/delta-bootstrap-theme-for-mobile-apps/" target="_blank">
-                                <img class="img-fluid project-image" src="assets/images/projects/project-5.png" alt="project name" />
+					<img class="img-fluid project-image" src="{% static 'images/projects/project-5.png' %}" alt="project name" />
                                 </a>
                                 <div class="desc col-md-8 col-12">
                                     <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/delta-bootstrap-theme-for-mobile-apps/" target="_blank">Delta - Bootstrap 4 Theme for Promoting Mobile Apps</a></h3>
@@ -216,9 +217,9 @@
                         <h2 class="heading sr-only">Basic Information</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>San Francisco, US</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">jameslee@website.com</a></li>
-                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://www.website.com</a></li>
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Montreal, Canada</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">emile.arseneault@gmail.com</a></li>
+                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://www.emilemultiserver.ddns.net</a></li>
                             </ul>
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
@@ -405,17 +406,17 @@
     </footer><!--//footer-->
  
     <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+	<script type="text/javascript" src="{% static 'plugins/jquery-3.4.1.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'plugins/popper.min.js' %}"></script> 
+	<script type="text/javascript" src="{% static 'plugins/bootstrap/js/bootstrap.min.js' %}"></script>    
+	<script type="text/javascript" src="{% static 'plugins/jquery-rss/dist/jquery.rss.min.js' %}"></script> 
     <!-- github calendar plugin -->
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+	<script type="text/javascript" src="{% static 'plugins/github-calendar/dist/github-calendar.min.js' %}"></script>
     <!-- github activity plugin -->
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
+	<script type="text/javascript" src="{% static 'plugins/github-activity/github-activity-0.1.5.min.js' %}"></script>
     <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+	<script type="text/javascript" src="{% static 'js/main.js' %}"></script>            
 </body>
 </html> 
 
